@@ -14,13 +14,18 @@ ul a:visited {
 .para {
   padding: 10px 20px;
 }
+.reverse .para {
+  width: 50%;
+  padding: 0;
+}
 
 .para-short {
   width: 50%;
-  margin-top: 0;
-  margin-bottom: 0;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
+}
+.reverse .para-short {
+  width: 100%;
+  padding: 10px 20px;
 }
 
 /*# sourceMappingURL=style.css.map */
