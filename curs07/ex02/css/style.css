@@ -1,0 +1,32 @@
+:root {
+  --d: 150px;
+}
+
+.box {
+  width: 100px;
+  height: 100px;
+  background: darkred;
+}
+
+.box-1 {
+  animation: box-1 10s ease-out;
+}
+
+@keyframes box-1 {
+  0% {
+  }
+
+  33% {
+    transform: translateY(calc(100vh - var(--d)));
+  }
+
+  66% {
+    transform: translate(calc(100vw - var(--d)), calc(100vh - var(--d)));
+  }
+
+  100% {
+  }
+}
+
+.box-2 {
+}
