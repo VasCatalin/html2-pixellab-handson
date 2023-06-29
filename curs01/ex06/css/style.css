@@ -42,4 +42,21 @@
   background: purple;
 }
 
+.circle-red {
+  background: red;
+}
+
+.circle-green {
+  background: green;
+}
+
+.circle-blue {
+  background: blue;
+}
+
+.circle-border-blue {
+  border: solid;
+  border-color: blue;
+}
+
 /*# sourceMappingURL=style.css.map */

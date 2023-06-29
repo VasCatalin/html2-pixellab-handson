@@ -57,3 +57,24 @@
 .circle {
   @include circle();
 }
+
+.circle-red {
+  @include circleBg(red);
+}
+
+.circle-green {
+  @include circleBg(green);
+}
+
+.circle-blue {
+  @include circleBg(blue);
+}
+
+@mixin circle-border-blue($border: blue) {
+  border: solid;
+  border-color: $border;
+}
+
+.circle-border-blue {
+  @include circle-border-blue();
+}
