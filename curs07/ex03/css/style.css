@@ -29,9 +29,10 @@
 .animation02 {
   margin: 0;
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
+  flex-direction: column;
   align-items: center;
-  height: 100vh;
+  height: 20vh;
 }
 
 .loader-y {
@@ -49,11 +50,11 @@
 
 @keyframes bounce {
   from {
-    transform: translateY(0);
+    transform: translateX(0);
   }
 
   to {
-    transform: translateY(-20px);
+    transform: translateX(-20px);
   }
 }
 
@@ -67,4 +68,45 @@
 
 .loader-y span:nth-child(4) {
   animation-delay: 1.8s;
+}
+
+.circle {
+  width: 70px;
+  aspect-ratio: 1;
+  border: 10px solid;
+  border-color: transparent transparent transparent red;
+  border-radius: 50%;
+  animation: rotate 2.5s linear infinite;
+  position: relative;
+}
+
+@keyframes rotate {
+  0% {
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.arrow {
+  content: '';
+  position: absolute;
+  width: 13px;
+  aspect-ratio: 1;
+  background: red;
+  top: -1px;
+  left: 2px;
+  transform: rotate(5deg);
+}
+
+.back {
+  content: '';
+  position: absolute;
+  width: 12px;
+  aspect-ratio: 1;
+  background: white;
+  bottom: -1px;
+  left: 2px;
+  transform: rotate(5deg);
 }

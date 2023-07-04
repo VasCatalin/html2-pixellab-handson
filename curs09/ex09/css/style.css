@@ -57,6 +57,15 @@ body {
   left: 10px;
 }
 /* please do not modify this code */
+.flex-container-01 {
+  flex-direction: column-reverse;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+.flex-container-01 :nth-child(2) {
+  flex-shrink: 2;
+}
 
 .flex-container-02 {
   flex-direction: column;
@@ -72,12 +81,45 @@ body {
   flex-shrink: 3;
 }
 
+.flex-container-03 {
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.flex-container-03 :nth-child(3) {
+  flex-shrink: 2;
+}
+
+.flex-container-04 {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-container-04 :nth-child(3) {
+  flex-shrink: 3;
+}
+
+.flex-container-04 :nth-child(4) {
+  flex-shrink: 2;
+}
+
 .flex-container-05 {
   flex-direction: column-reverse;
-  justify-content: space-evenly;
+  justify-content: space-around;
   align-items: flex-end;
 }
 
 .flex-container-05 :nth-last-child(2) {
+  flex-shrink: 2;
+}
+
+.flex-container-06 {
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.flex-container-06 :last-child {
   flex-shrink: 2;
 }

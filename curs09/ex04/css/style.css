@@ -61,6 +61,31 @@
   align-self: flex-start;
 }
 
+.flex-container-01 {
+  justify-content: space-around;
+  align-items: flex-end;
+}
+
+.flex-container-01 :nth-child(4) {
+  align-self: center;
+  height: unset;
+}
+
+.flex-container-04 {
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.flex-container-04 :last-child {
+  align-self: center;
+}
+
+.flex-container-05 {
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .flex-container-06 {
   justify-content: flex-end;
   align-items: flex-start;
@@ -68,4 +93,9 @@
 
 .flex-container-06 .third {
   align-self: flex-end;
+}
+
+.flex-container-05 :nth-child(4) {
+  align-self: stretch;
+  width: unset;
 }

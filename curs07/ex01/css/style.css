@@ -12,6 +12,46 @@
   }
 }
 
+.bar-02 {
+  animation: bar-02 8s linear;
+}
+
+@keyframes bar-02 {
+  0% {
+    width: 50px;
+  }
+
+  100% {
+    width: 100%;
+  }
+}
+
+.bar-03 {
+  animation: bar-03 12s ease-in;
+}
+
+@keyframes bar-03 {
+  25% {
+    background-color: blue;
+    width: 100%;
+  }
+
+  50% {
+    width: 75%;
+    background: yellow;
+  }
+
+  75% {
+    width: 200px;
+    background: red;
+  }
+
+  100% {
+    width: 5px;
+    background: blue;
+  }
+}
+
 .bar-04 {
   animation: bar-04 5s ease-out backwards;
 }
@@ -39,5 +79,45 @@
   100% {
     width: 100%;
     background: red;
+  }
+}
+
+.bar-05 {
+  animation: bar-05 8s linear;
+}
+
+@keyframes bar-05 {
+  25% {
+    background-color: red;
+    width: 100%;
+  }
+
+  50% {
+    background-color: red;
+    width: 500px;
+  }
+
+  75% {
+    background-color: green;
+    width: 75%;
+  }
+
+  100% {
+    background-color: orange;
+    width: 500px;
+  }
+}
+
+.bar-06 {
+  animation: bar-06 4s ease-in;
+}
+
+@keyframes bar-06 {
+  0% {
+    width: 200px;
+  }
+
+  100% {
+    width: 100%;
   }
 }
