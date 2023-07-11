@@ -27,16 +27,101 @@
 </head>
 
 <body>
-  <header class="container">
-    <h1>Formular reteta</h1>
+  <header class="mb-5">
+    <div class="container">
+      <h1>Formular reteta</h1>
+    </div>
   </header>
 
-  <main class="container">
+  <form>
+    <section class="general container">
+      <header class="mb-3">
+        <h1>Reteta</h1>
+      </header>
 
-  </main>
+      <div class="row">
+        <div class="col-lg-6 d-flex flex-column gap-3">
+          <div class="input-group">
+            <label
+              for="recipe-name"
+              class="input-group-text"
+            >Numele retetei *</label>
 
+            <input
+              type="text"
+              name="recipe-name"
+              id="recipe-name"
+              class="form-control"
+              placeholder="Numele retei"
+              required
+            >
+          </div>
 
+          <div class="input-group">
+            <label
+              for="description-long"
+              class="input-group-text align-items-start"
+            >Descrierea retetei * </label>
 
+            <textarea
+              name="description-long"
+              id="description-long"
+              rows="8"
+              class="form-control"
+              placeholder="Descrierea retetei"
+              required
+            ></textarea>
+          </div>
+        </div>
+
+        <div class="col-lg-6 mt-3 mt-lg-0 flex-column gap-4 d-flex">
+          <div>
+            <label
+              for="recipe-image"
+              class="form-label"
+            >Imagine principala *</label>
+
+            <input
+              type="file"
+              name="recipe-image"
+              id="recipe-image"
+              class="form-control"
+              required
+            >
+          </div>
+
+          <div class="input-group">
+            <label
+              for="author"
+              class="input-group-text"
+            >Autor *</label>
+
+            <select
+              name="author"
+              id="author"
+              class="form-select"
+              required
+            >
+              <option value="">-- selecteaza --</option>
+            </select>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ./general -->
+
+    <section class="author"></section>
+    <!-- ./author -->
+
+    <section class="ingredients"></section>
+    <!-- ./ingredients -->
+
+    <section class="steps"></section>
+    <!-- ./steps -->
+
+    <section class="controls"></section>
+    <!-- ./controls -->
+  </form>
 
 
   <div
