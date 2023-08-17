@@ -56,3 +56,80 @@ body {
 .flex-container-01 :nth-child(2) {
   order: 1;
 }
+
+/* container 02 */
+.flex-container-02 {
+  flex-direction: column;
+}
+
+.flex-container-02 :nth-child(3) {
+  order: 3;
+}
+
+.flex-container-02 :nth-child(2) {
+  order: 2;
+}
+
+.flex-container-02 :nth-child(4) {
+  order: 1;
+}
+
+/* container 03 */
+.flex-container-03 :nth-child(4) {
+  order: 1;
+}
+
+.flex-container-03 {
+  flex-direction: column-reverse;
+}
+
+/* container 04 */
+.flex-container-04 {
+  flex-direction: column;
+}
+
+.flex-container-04 :nth-child(4) {
+  order: 3;
+}
+
+.flex-container-04 :last-child {
+  order: 2;
+}
+
+.flex-container-04 :nth-child(2) {
+  order: 1;
+}
+
+/* container 05 */
+.flex-container-05 :nth-child(2) {
+  order: 3;
+}
+
+.flex-container-05 :last-child {
+  order: 2;
+}
+
+.flex-container-05 :nth-child(3) {
+  order: 1;
+}
+
+.flex-container-05 {
+  flex-direction: column-reverse;
+}
+
+/* container 06 */
+.flex-container-06 :last-child {
+  order: 3;
+}
+
+.flex-container-06 :nth-child(4) {
+  order: 2;
+}
+
+.flex-container-06 :nth-child(2) {
+  order: 1;
+}
+
+.flex-container-06 {
+  flex-direction: column;
+}
