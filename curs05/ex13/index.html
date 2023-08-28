@@ -52,7 +52,7 @@
               name="recipe-name"
               id="recipe-name"
               class="form-control"
-              placeholder="Numele retei"
+              placeholder="Numele retetei *"
               required
             >
           </div>
@@ -61,14 +61,30 @@
             <label
               for="description-long"
               class="input-group-text align-items-start"
-            >Descrierea retetei * </label>
+            >Descriere lunga * </label>
 
             <textarea
               name="description-long"
               id="description-long"
               rows="8"
               class="form-control"
-              placeholder="Descrierea retetei"
+              placeholder="Descriere lunga *"
+              required
+            ></textarea>
+          </div>
+
+          <div class="input-group">
+            <label
+              for="description-short"
+              class="input-group-text align-items-start"
+            >Descriere scurta * </label>
+
+            <textarea
+              name="description-short"
+              id="description-short"
+              rows="4"
+              class="form-control"
+              placeholder="Descrieree scurta *"
               required
             ></textarea>
           </div>
@@ -110,7 +126,7 @@
     </section>
     <!-- ./general -->
 
-    <section class="author container">
+    <section class="author container mt-4">
       <header class="mb-3">
         <h1>Autor (optional)</h1>
       </header>
@@ -135,30 +151,76 @@
       <div class="row">
         <div class="col-lg-6 d-flex flex-column gap-3">
           <!-- adauga  website fara required -->
+          <div class="input-group">
+            <label
+              for="author-name"
+              class="input-group-text align-items-start"
+            >Numele Autorului*</label>
+
+            <input
+              type="text"
+              name="author-name"
+              id="author-name"
+              placeholder="Numele Autorului*"
+              class="form-control"
+              required
+            >
+          </div>
 
           <div class="input-group">
             <label
               for="author-email"
               class="input-group-text align-items-start"
-            >Emailul Autorului</label>
+            >Emailul Autorului*</label>
 
             <input
               type="email"
               name="author-email"
               id="author-email"
-              placeholder="Email"
+              placeholder="Email*"
+              class="form-control"
+              required
+            >
+          </div>
+
+          <div class="input-group">
+            <label
+              for="author-surname"
+              class="input-group-text align-items-start"
+            >Prenumele Autorului*</label>
+
+            <input
+              type="text"
+              name="author-surname"
+              id="author-surname"
+              placeholder="Prenumele Autorului*"
               class="form-control"
               required
             >
           </div>
         </div>
 
-        <div class="col-lg-6 mt-3 mt-ml-0 d-flex flex-column gap-3"></div>
+        <div class="col-lg-6 mt-ml-0 d-flex flex-column">
+          <div class="input-group">
+            <label
+              for="author-website"
+              class="input-group-text align-items-start"
+            >Website</label>
+
+            <input
+              type="text"
+              name="author-website"
+              id="author-website"
+              placeholder="Website"
+              class="form-control"
+            >
+          </div>
+        </div>
       </div>
     </section>
     <!-- ./author -->
 
-    <section class="ingredients container">
+    <section class="ingredients container mt-4">
       <header class="mb-3">
         <h1>Ingrediente</h1>
       </header>
@@ -169,13 +231,13 @@
             <label
               for="ingredient-name"
               class="input-group-text align-items-start"
-            >Nume Ingredient</label>
+            >Nume Ingredient *</label>
 
             <input
               type="text"
               name="ingredient-name"
               id="ingredient-name"
-              placeholder="Nume Ingredient"
+              placeholder="Nume Ingredient *"
               class="form-control"
               required
             >
@@ -196,7 +258,35 @@
           </header>
 
           <ul class="p-0">
-            <li class="d-flex align-items-center gap-2">10g Ulei
+            <li class="d-flex align-items-center gap-2 my-2">10g Ulei
+              <button
+                type="button"
+                class="btn btn-primary"
+                title="Editeaza"
+              >Editeaza</button>
+
+              <button
+                type="button"
+                class="btn btn-danger"
+                title="Sterge"
+              >Sterge</button>
+            </li>
+
+            <li class="d-flex align-items-center gap-2 my-2">200g Ceapa
+              <button
+                type="button"
+                class="btn btn-primary"
+                title="Editeaza"
+              >Editeaza</button>
+
+              <button
+                type="button"
+                class="btn btn-danger"
+                title="Sterge"
+              >Sterge</button>
+            </li>
+
+            <li class="d-flex align-items-center gap-2 my-2">200g ardei gras
               <button
                 type="button"
                 class="btn btn-primary"
@@ -221,7 +311,55 @@
       </header>
 
       <div class="row">
-        <div class="col-lg-6">
+        <div class="col-lg-6 d-flex flex-column gap-3">
+
+          <div class="input-group">
+            <label
+              for="step-title"
+              class="input-group-text"
+            >Titlu pas *</label>
+
+            <input
+              type="text"
+              name="step-title"
+              id="step-title"
+              class="form-control"
+              placeholder="Titlu pas *"
+              required
+            >
+          </div>
+
+          <div class="input-group">
+            <label
+              for="step-subtitle"
+              class="input-group-text"
+            >Subtitlu pas *</label>
+
+            <input
+              type="text"
+              name="step-subtitle"
+              id="step-subtitle"
+              class="form-control"
+              placeholder="Subtitlu pas *"
+              required
+            >
+          </div>
+
+          <div class="input-group">
+            <label
+              for="step-description"
+              class="input-group-text align-items-start"
+            >Descriere pas * </label>
+
+            <textarea
+              name="step-description"
+              id="step-description"
+              rows="6"
+              class="form-control"
+              placeholder="Descriere pas *"
+              required
+            ></textarea>
+          </div>
 
           <div class="d-flex justify-content-end">
             <button
