@@ -25,3 +25,34 @@
   background-color: lightseagreen;
 }
 /* please do not modify this code */
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 120px 1fr 400px 2fr 350px 10px;
+  grid-template-rows: 150px;
+}
+
+.grid-item-1 {
+  align-self: end;
+  justify-self: end;
+}
+
+.grid-item-2 {
+  align-self: start;
+  justify-self: center;
+}
+
+.grid-item-3 {
+  align-self: center;
+  justify-self: end;
+}
+
+.grid-item-4 {
+  align-self: start;
+  justify-self: start;
+}
+
+.grid-item-5 {
+  align-self: end;
+  justify-self: start;
+}
